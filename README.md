@@ -1,9 +1,9 @@
 # ESG100
-About: User Guide in included in About section. Click "+" for details:
-![image](https://user-images.githubusercontent.com/35645038/173218824-2d0018f9-8272-4a35-9826-bfc4704301a3.png)   
+About: User Guide in included in About section. Click "+" for details: 
+![image](https://user-images.githubusercontent.com/35645038/175801061-282b8bb6-2848-4231-ad77-d0e7d7b3ec79.png)
 
-ESG_Score data on selected stock is displayed:
-![image](https://user-images.githubusercontent.com/35645038/173218978-73742bd1-986c-44f7-b038-b4bb65edc5b2.png)  
+ESG_Score data on selected stock is displayed. Click the Download link to download the displayed data into CSV file.
+![image](https://user-images.githubusercontent.com/35645038/175801111-0cf1367b-d0dd-4739-839f-bb95d3ef70a3.png)
 
 Select different minute intervals and number of days of historical data to be displayed:  
 ![image](https://user-images.githubusercontent.com/35645038/173219226-b8e9091f-6114-47bd-b736-d54ba70b6b9a.png)  
