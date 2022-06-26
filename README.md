@@ -8,8 +8,8 @@ ESG_Score data on selected stock is displayed. Click the Download link to downlo
 Select different minute intervals and number of days of historical data to be displayed:  
 ![image](https://user-images.githubusercontent.com/35645038/173219226-b8e9091f-6114-47bd-b736-d54ba70b6b9a.png)  
 
-Downloadable historical data
-![image](https://user-images.githubusercontent.com/35645038/175804647-3c5cd3ab-e052-4a52-a306-2b613c6eec9f.png)
+Downloadable historical data!
+[image](https://user-images.githubusercontent.com/35645038/175804884-0430b378-da39-4d93-b566-2e58a6f898b5.png)
 
 Use slide bar for number of rows to display. Result can be in Ascending or Descending order:
 ![image](https://user-images.githubusercontent.com/35645038/173219293-c9476295-fda5-4024-a78a-6be56821dde5.png)
