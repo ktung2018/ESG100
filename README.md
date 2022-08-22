@@ -14,6 +14,8 @@ Downloadable historical data!
 Use slide bar for number of rows to display. Result can be in Ascending or Descending order:
 ![image](https://user-images.githubusercontent.com/35645038/173219293-c9476295-fda5-4024-a78a-6be56821dde5.png)
 
+![image](https://user-images.githubusercontent.com/35645038/185995022-42df9752-57ea-4762-81fd-44b302361a1d.png)
+![image](https://user-images.githubusercontent.com/35645038/185995274-c51c3c28-c86b-44cf-a948-b4709da99af5.png)
 
 
 Contributor: Kim Tung kimrtung@gmail.com
