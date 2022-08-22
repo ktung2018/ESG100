@@ -7,8 +7,10 @@ import pandas as pd
 import yfinance as yf
 import streamlit as st
 import datetime as dt
+import base64
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import plotly.express as px
 import numpy as np
 
 esg_df = pd.read_csv("Datasets/ESG100.csv", index_col=False)
@@ -21,15 +23,18 @@ st.set_page_config(layout="wide")
 st.title('ESG 100 Stocks')
 expander_bar = st.expander("About")
 expander_bar.markdown("""
-* Interactive ESG 100 historical EOD stock price data ontained from open-source finance API, yFinance. Adjust the interval in minutes and numbere of EOD prices by changing the value from the drop down list.
-* First subplot: Horizontal bar chart to show the distribution of total volumn at each price level
+* Interactive ESG 100 historical EOD stock price data obtained from open-source finance API, yFinance. Adjust the interval in minutes and numbere of EOD prices by changing the value from the drop down list.
+* First subplot: Horizontal bar chart to show the distribution of total volume at each price level
 * Second subplot: Candlestick chart to show the fluctuation of stock prices over the time series
 * ESG metrics such as industry, ESG Score, EPS Rating, Return On Equity is displayed in this page, click each header column to sort the companies in ascending or descending order
+* Click "Download CSV File" to download selected ESG information into csv file
 """)
 
 ticker = st.sidebar.selectbox(
     'Choose a ESG Stock by Symbol',
      symbols)
+    
+df_select = esg_df.loc[esg_df['Symbol']==ticker]
 
 #name = st.sidebar.selectbox(
 #    'Choose a ESG Stock by Name',
@@ -145,6 +150,8 @@ fig.add_trace(
 
 dateStr = history_data.index.strftime("%d-%m-%Y %H:%M:%S")
 
+#df['DateStr'] = df['DateObject'].dt.strftime('%d%m%Y')
+
 fig.add_trace(
     go.Candlestick(x=dateStr,
                 open=history_data['Open'],
@@ -187,13 +194,53 @@ config={
         'modeBarButtonsToAdd': ['drawline']
     }
 
+#st.markdown('### You selected:')
+#st.dataframe(df_select)
+
+#st.dataframe(history_data)
+
+#Download CSV data
+def filedownload(df):
+    #csv = df_select.to_csv(index=False)
+    csv = df.to_csv(index=True)
+    b64 = base64.b64encode(csv.encode()).decode() #strings <-> bytes conversions
+
+    href=f'<a href="data:file/csv; base64,{b64}" download="esg.csv">Download CSV File</a>'
+
+    return href
+
+st.markdown('### You selected:')
+st.dataframe(df_select)
+st.markdown(filedownload(df_select), unsafe_allow_html=True)
+
 st.plotly_chart(fig, use_container_width=True, config=config)
 
-
-
 col2, col3=st.columns((2,1))
-#col2.dataframe(esg_df)
-st.title('ESG Stocks with Highest ESG Scores')
+st.title("Selected Historical Data")
+st.markdown(filedownload(history_data), unsafe_allow_html=True)
+st.dataframe(history_data)
 
+close_data = pd.DataFrame(
+    #np.random.randn(20, 3),
+    history_data,
+    columns=['Close']
+)
+
+daily_returns = history_data['Close'].pct_change().dropna()
+st.header("Daily Return over time")
+st.dataframe(daily_returns)
+daily_returns_data = pd.DataFrame(
+    daily_returns,
+    columns=['Close']
+)
+
+#cumulative_returns = (1+ daily_returns).cumprod()
+#daily_returns_data = pd.DataFrame(
+#    cumulative_returns
+#)
+st.line_chart(close_data)
+st.line_chart(daily_returns_data)
+
+st.title('ESG Stocks with Highest ESG Scores')
 st.dataframe(df_score)
 #col2.dataframe(df_score.style.highlight_max(axis=0))
