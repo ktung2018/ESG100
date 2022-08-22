@@ -1,4 +1,11 @@
 # ESG100
+### Interactive ESG 100 historical EOD stock price data obtained from open-source finance API, yFinance. Adjust the interval in minutes and numbere of EOD prices by changing the value from the drop down list.
+### Horizontal bar chart to show the distribution of total volume at each price level
+### SCandlestick chart to show the fluctuation of stock prices over the time series
+### Charts: Daily Return and Cumulative Returns over time
+### ESG metrics such as industry, ESG Score, EPS Rating, Return On Equity is displayed in this page, click each header column to sort the companies in ascending or descending order
+### Downloadable csv files
+
 About: User Guide in included in About section. Click "+" for details: 
 ![image](https://user-images.githubusercontent.com/35645038/175801061-282b8bb6-2848-4231-ad77-d0e7d7b3ec79.png)
 
