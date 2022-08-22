@@ -26,6 +26,7 @@ expander_bar.markdown("""
 * Interactive ESG 100 historical EOD stock price data obtained from open-source finance API, yFinance. Adjust the interval in minutes and numbere of EOD prices by changing the value from the drop down list.
 * First subplot: Horizontal bar chart to show the distribution of total volume at each price level
 * Second subplot: Candlestick chart to show the fluctuation of stock prices over the time series
+* Daily Return and Cumulative Returns over time
 * ESG metrics such as industry, ESG Score, EPS Rating, Return On Equity is displayed in this page, click each header column to sort the companies in ascending or descending order
 * Click "Download CSV File" to download selected ESG information into csv file
 """)
@@ -228,18 +229,21 @@ close_data = pd.DataFrame(
 
 daily_returns = history_data['Close'].pct_change().dropna()
 st.header("Daily Return over time")
-st.dataframe(daily_returns)
+#st.dataframe(daily_returns)
 daily_returns_data = pd.DataFrame(
     daily_returns,
     columns=['Close']
 )
-
-#cumulative_returns = (1+ daily_returns).cumprod()
-#daily_returns_data = pd.DataFrame(
-#    cumulative_returns
-#)
-st.line_chart(close_data)
+#st.line_chart(close_data)
 st.line_chart(daily_returns_data)
+
+cumulative_returns = (1+ daily_returns).cumprod()
+st.header("Cumulative Returns")
+cum_returns_data = pd.DataFrame(
+     cumulative_returns,
+     columns=['Close']
+)
+st.line_chart(cum_returns_data)
 
 st.title('ESG Stocks with Highest ESG Scores')
 st.dataframe(df_score)
