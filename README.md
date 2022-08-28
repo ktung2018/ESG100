@@ -3,6 +3,7 @@
 #### Horizontal bar chart to show the distribution of total volume at each price level
 #### Candlestick chart to show the fluctuation of stock prices over the time series
 #### Line charts: Daily Return and Cumulative Returns over time
+#### Calculate trading profit using SMA
 #### ESG metrics such as industry, ESG Score, EPS Rating, Return On Equity is displayed in this page, click each header column to sort the companies in ascending or descending order
 #### Downloadable csv files
 
