@@ -21,7 +21,7 @@ Downloadable historical data!
 
 ![image](https://user-images.githubusercontent.com/35645038/186001817-f67f87b6-8102-40ac-b17d-d79eaa81d674.png)
 
-Calculate profit using SMA method
+Calculate profit using SMA method      
 ![image](https://user-images.githubusercontent.com/35645038/187063177-403a656e-6ffa-4469-9957-a22ee8d8c30d.png)
 
 Use slide bar for number of rows to display. Result can be in Ascending or Descending order:
