@@ -5,7 +5,7 @@
 #### - Line charts: Daily Return and Cumulative Returns over time
 #### - Calculate trading profit using SMA
 #### - ESG metrics such as industry, ESG Score, EPS Rating, Return On Equity is displayed in this page, click each header column to sort the companies in ascending or descending order
-#### - Downloadable csv files
+#### - Downloadable csv data files
 ____________________________________________________________________________________________________
 
 About: User Guide in included in About section. Click "+" for details: 
