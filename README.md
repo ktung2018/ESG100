@@ -10,6 +10,9 @@
 ____________________________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/35645038/188265448-9b94d307-df39-4794-95e4-99c712cba561.png)
 
+Calculate trading profit using SMA method      
+![image](https://user-images.githubusercontent.com/35645038/187063177-403a656e-6ffa-4469-9957-a22ee8d8c30d.png)
+
 About: User Guide in included in About section. Click "+" for details: 
 ![image](https://user-images.githubusercontent.com/35645038/175801061-282b8bb6-2848-4231-ad77-d0e7d7b3ec79.png)
 
@@ -23,9 +26,6 @@ Downloadable historical data!
 ![image](https://user-images.githubusercontent.com/35645038/175804925-bcf7a5fd-d32e-4312-8b8a-49871c513ca5.png)
 
 ![image](https://user-images.githubusercontent.com/35645038/186001817-f67f87b6-8102-40ac-b17d-d79eaa81d674.png)
-
-Calculate trading profit using SMA method      
-![image](https://user-images.githubusercontent.com/35645038/187063177-403a656e-6ffa-4469-9957-a22ee8d8c30d.png)
 
 Use slide bar for number of rows to display. Result can be in Ascending or Descending order:
 ![image](https://user-images.githubusercontent.com/35645038/173219293-c9476295-fda5-4024-a78a-6be56821dde5.png)
