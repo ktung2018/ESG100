@@ -1,6 +1,6 @@
 # ESG100
 #### - Interactive ESG 100 historical EOD stock price data obtained from open-source finance API, yFinance. Adjust the interval in minutes and numbere of EOD prices by changing the value from the drop down list.
-#### - Stock Price time series forcast using moving average predictions with RMSE: 3.054
+#### - Stock Price time series forcast using moving average (window with = 3) predictions with RMSE: 3.054
 #### - Line charts: Daily Return and Cumulative Returns over time
 #### - Calculate trading profit using SMA
 #### - ESG metrics such as industry, ESG Score, EPS Rating, Return On Equity is displayed in this page, click each header column to sort the companies in ascending or descending order
