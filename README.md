@@ -1,12 +1,11 @@
 # ESG100
 #### - Interactive ESG 100 historical EOD stock price data obtained from open-source finance API, yFinance. Adjust the interval in minutes and numbere of EOD prices by changing the value from the drop down list.
-#### - Horizontal bar chart to show the distribution of total volume at each price level
-#### - Candlestick chart to show the fluctuation of stock prices over the time series
+#### - Stock Price time series forcast using moving average predictions with RMSE: 3.054
 #### - Line charts: Daily Return and Cumulative Returns over time
 #### - Calculate trading profit using SMA
 #### - ESG metrics such as industry, ESG Score, EPS Rating, Return On Equity is displayed in this page, click each header column to sort the companies in ascending or descending order
 #### - Downloadable csv data files
-#### - Stock Price time series forcast using moving average predictions
+
 ____________________________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/35645038/188265448-9b94d307-df39-4794-95e4-99c712cba561.png)
 
