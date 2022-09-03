@@ -6,7 +6,9 @@
 #### - Calculate trading profit using SMA
 #### - ESG metrics such as industry, ESG Score, EPS Rating, Return On Equity is displayed in this page, click each header column to sort the companies in ascending or descending order
 #### - Downloadable csv data files
+#### - Stock Price time series forcast using moving average predictions
 ____________________________________________________________________________________________________
+![image](https://user-images.githubusercontent.com/35645038/188265448-9b94d307-df39-4794-95e4-99c712cba561.png)
 
 About: User Guide in included in About section. Click "+" for details: 
 ![image](https://user-images.githubusercontent.com/35645038/175801061-282b8bb6-2848-4231-ad77-d0e7d7b3ec79.png)
